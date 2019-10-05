@@ -1,0 +1,55 @@
+body{
+    background-image: url("../images/pizzaback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Mansalva', cursive;
+}
+.container{
+    margin:0;
+}
+nav{
+    width:80%;
+    height:100px;
+    background-color: rgb(255, 208, 0);
+    margin-top: o;
+    color: black;
+    font-size: 20px;
+    color: black;
+    margin:0 150px 10px ;
+}
+.nav-main h2{
+    font-size: 30px;
+    color:rgb(66, 62, 55);
+    text-align: center;
+}
+.nav-main ul li{
+    list-style: none ;
+    display: inline-block;
+}
+ul li a{
+   display: block;
+   padding: 0 20px;
+
+}
+.nav .nav-main ul li a :hover{
+    display: inline-block;
+    color:black;
+    text-decoration-color: aquamarine;
+    background-color: white;
+    cursor: pointer;
+    display: block;
+}
+img{
+    right: 100%;
+}
+.home{
+    padding: 10px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(68, 0, 255);
+    margin: 10px 40px;
+}
+.home h3{
+    color: rgb(66, 62, 55);
+    text-align: center;
+    
+}
