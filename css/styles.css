@@ -18,7 +18,7 @@ nav{
     margin:0 150px 10px ;
 }
 .nav-main h2{
-    font-size: 30px;
+    font-size: 45px;
     color:rgb(66, 62, 55);
     text-align: center;
 }
@@ -43,7 +43,7 @@ img{
     right: 100%;
 }
 .home{
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(255, 187, 0);
     color: rgb(68, 0, 255);
     margin: 10px 40px;
@@ -52,4 +52,15 @@ img{
     color: rgb(66, 62, 55);
     text-align: center;
     
+}
+.services{
+    padding: 20px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(68, 0, 255);
+    margin: 10px 40px;
+
+}
+.services h3{
+    color: rgb(66, 62, 55);
+    text-align: center; 
 }
