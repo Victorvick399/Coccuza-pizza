@@ -39,8 +39,10 @@
       </div>
       <div class="order">
         <h3>ORDER</h3>
-        <p>If you would like to ordet please fill the form below to see the cost.One is supposed to pay the delivery person the money for the order.</p>
+        <p>If you would like to ordet please fill the form below to see the cost.One is supposed to pay the delivery person the money for the order.The prices vary according to to the pizza size,pizza crust and pizza toppings.One can also order more than one pizza but the most pizzas one can have delivered are 100.</p>
         <form>
+          <div class="row">
+            <div class="col-md-6"> 
           <label>Pizza size:</label>
           <select class="form-control" style=" height:50px;width:300px;">
             <option>Small</option>
@@ -58,8 +60,10 @@
             <option>Neopolitan</option>
             <option>New york style</option>
           </select>
+          </div>
+          <div class="col-md-6">
           <label>Types of toppings:</label>
-          <select class="form-control" style=" height:50px;width:300px;" multiple="multiple">
+          <select class="form-control" style="height:50px;width:300px;" multiple="multiple">
               <option>Pepporoni</option>
               <option>Mushroom</option>
               <option>Bacon</option>
@@ -83,6 +87,10 @@
               <option>Red onion</option>
               <option>Green hill pepper</option>
           </select>
+          <label>Number of pizzas required:</label>
+          <br>
+          <input type="number" max="100" min="1" style="height:50px;width:300px;" >
+          </div>
         </form>
       </div>
     </div>
