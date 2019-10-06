@@ -38,6 +38,7 @@ ul li a{
     background-color: white;
     cursor: pointer;
     display: block;
+    position: fixed;
 }
 img{
     right: 100%;
@@ -63,4 +64,7 @@ img{
 .services h3{
     color: rgb(66, 62, 55);
     text-align: center; 
+}
+.services a{
+    text-decoration: underline;
 }
