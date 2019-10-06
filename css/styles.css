@@ -68,3 +68,16 @@ img{
 .services a{
     text-decoration: underline;
 }
+.enjoy{
+    background-image: url("../images/mizz.gif");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.enjoy p{
+    margin-left: 380px;
+    padding-top: 230px;
+    font-size:30px;
+    color:rgb(3, 3, 3);
+}
