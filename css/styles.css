@@ -5,17 +5,18 @@ body{
     font-family: 'Mansalva', cursive;
 }
 .container{
-    margin:0;
+    margin:0 50px;
+    scroll-behavior: smooth;
 }
 nav{
     width:80%;
     height:100px;
     background-color: rgb(255, 208, 0);
-    margin-top: o;
     color: black;
     font-size: 20px;
     color: black;
-    margin:0 150px 10px ;
+    margin:0 ;
+    position:;
 }
 .nav-main h2{
     font-size: 45px;
@@ -38,34 +39,33 @@ ul li a{
     background-color: white;
     cursor: pointer;
     display: block;
-    position: fixed;
 }
 img{
     right: 100%;
 }
-.home{
+#home{
     padding: 20px;
     background-color: rgb(255, 187, 0);
     color: rgb(68, 0, 255);
-    margin: 10px 40px;
+    margin: 20px 50px 20px;
 }
 .home h3{
     color: rgb(66, 62, 55);
     text-align: center;
     
 }
-.services{
+#services{
     padding: 20px;
     background-color: rgb(255, 187, 0);
     color: rgb(68, 0, 255);
-    margin: 10px 40px;
+    margin: 20px 50px 20px;
 
 }
-.services h3{
+#services h3{
     color: rgb(66, 62, 55);
     text-align: center; 
 }
-.services a{
+#services a{
     text-decoration: underline;
 }
 .enjoy{
@@ -80,4 +80,13 @@ img{
     padding-top: 230px;
     font-size:30px;
     color:rgb(3, 3, 3);
+}
+#order{
+    padding: 20px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(68, 0, 255);
+    margin: 20px 50px 30px;  
+}
+#check{
+    padding: 20px;
 }
