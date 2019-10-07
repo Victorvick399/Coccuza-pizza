@@ -23,12 +23,12 @@
           <h2>Coccuza pizza</h2>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#about">Services</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="#order">Order</a></li>
             </ul>
          </nav>    
       </div>
-      <div class="home">
+      <div id="home">
         <h3>HOME</h3>
         <p>Coccuza pizza is a restaurant like no other in East Africa..It serves the best pizzas in the   country and region.We have multiple branches over Kenya,Uganda and Tanzania.What makes us        different from the other pizza restaurant is that we care for our customers.Our customers'       satisfaction is our main objective.We take you're feedback and opinions to high regard.</p>
         <p>We offer a variety of pizzas to choose from.We are not reserved to pizza alone but there are   also sides,drinks and a wide variety of foods from all over the region.We also do deliveries.</p>
@@ -36,50 +36,50 @@
       <div class="enjoy">
           <p>The hypest place to eat in town.</p>
       </div>
-      <div class="services">
+      <div id="services">
         <h3>SERVICES</h3>
         <p>Coccuza pizza offers a wide range of services to our customers.We cater for events.In this we  provide food and refreshments for a number of events eg weddings,partys etc.The cost of the      may differ but for those interested please dial the number at the bottom of the page where the   contact information is.We also have multiple branches of our restaurant positioned all over the  region.Visit one to experience the amazing atmosphere and taste our amazing quizines.We also     offer delivery services.There is a delivery fee according to where you live but prices are       shown in the oder section.We also try to make sure that deliverys are made in a maximum time of  40 minutes.</p>
       </div>
-      <div class="order">
+      <div id="order">
         <h3>ORDER</h3>
         <p>If you would like to ordet please fill the form below to see the cost.One is supposed to pay the delivery person the money for the order.The prices vary according to to the pizza size,pizza crust and pizza toppings.One can also order more than one pizza but the most pizzas one can have delivered are 100.</p>
         <form>
           <div class="row">
             <div class="col-md-6"> 
               <label>Pizza size:</label>
-                <select class="form-control" style=" height:50px;width:300px;">
-                  <option>Small</option>
-                  <option>Medium</option>
-                  <option>Large</option>
+                <select class="form-control" style=" height:50px;width:300px;" id="psize">
+                  <option value="500">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1200">Large</option>
                 </select>
               <label>Type of crust:</label>
-                <select class="form-control" style=" height:50px;width:300px;">
-                  <option>Garlic and parmesan coated</option>
-                  <option>Cheese stuffed</option>
-                  <option>Flat bread</option>
-                  <option>Thin crust</option>
-                  <option>Silicon style</option>
-                  <option>Chicago deep dish</option>
-                  <option>Neopolitan</option>
-                  <option>New york style</option>
+                <select class="form-control" style=" height:50px;width:300px;" id="pcrust">
+                  <option value="300">Garlic and parmesan coated</option>
+                  <option value="250">Cheese stuffed</option>
+                  <option value="200">Flat bread</option>
+                  <option value="230">Thin crust</option>
+                  <option value="280">Silicon style</option>
+                  <option value="350">Chicago deep dish</option>
+                  <option value="400">Neopolitan</option>
+                  <option value="500">New york style</option>
                 </select>
             </div>
             <div class="col-md-6">
               <label>Types of toppings:</label>
-                <select class="form-control" style="height:50px;width:300px;">
-                    <option>Pepporoni</option>
-                    <option>Mushroom</option>
-                    <option>Bacon</option>
-                    <option>Mozzarella</option>
-                    <option>Sausage</option>
-                    <option>Onions</option>
-                    <option>Tomatoes</option>
-                    <option>Garlic</option>
-                    <option>Crushed red pepper</option>
-                    <option>Basil</option>
+                <select class="form-control" style="height:50px;width:300px;" id="ptoppings">
+                    <option value="200">Pepporoni</option>
+                    <option value="220">Mushroom</option>
+                    <option value="100">Bacon</option>
+                    <option value="250">Mozzarella</option>
+                    <option value="100">Sausage</option>
+                    <option value="100">Onions</option>
+                    <option value="100">Tomatoes</option>
+                    <option value="100">Garlic</option>
+                    <option value="210">Crushed red pepper</option>
+                    <option value="240">Basil</option>
                 </select>
               <label>Number of pizzas required:</label>
-                <input type="number" max="100" min="1" style="height:50px;width:300px;" placeholder="Enter number here.." >
+                <input type="number" max="100" min="1" style="height:50px;width:300px;" placeholder="Enter number here.." id="pnumber" >
             </div>
             <br>
           </div>
@@ -92,8 +92,9 @@
                 <input type="radio" name="status" id="notdelivered">Not delivered(picked up)
             </form>
           </div>  
-          <div class="col-md-6" id="checkout">
-            <input type="button" value="Checkout prices">
+          <div class="col-md-6" id="check">
+            <input type="button" value="Checkout prices" id="checkout">
+            <div id="results"></div>
           </div>
         </div>
       </div>
