@@ -48,35 +48,24 @@
             <div class="col-md-6"> 
               <label>Pizza size:</label>
                 <select class="form-control" style=" height:50px;width:300px;" id="psize">
-                  <option value="500">Small</option>
-                  <option value="800">Medium</option>
-                  <option value="1200">Large</option>
+                  <option value="small" id="">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
                 </select>
               <label>Type of crust:</label>
                 <select class="form-control" style=" height:50px;width:300px;" id="pcrust">
-                  <option value="300">Garlic and parmesan coated</option>
-                  <option value="250">Cheese stuffed</option>
-                  <option value="200">Flat bread</option>
-                  <option value="230">Thin crust</option>
-                  <option value="280">Silicon style</option>
-                  <option value="350">Chicago deep dish</option>
-                  <option value="400">Neopolitan</option>
-                  <option value="500">New york style</option>
+                  <option value="garlic">Garlic and parmesan coated</option>
+                  <option value="stuffed">Cheese stuffed</option>
+                  <option value="bread">Flat bread</option>
                 </select>
             </div>
             <div class="col-md-6">
               <label>Types of toppings:</label>
                 <select class="form-control" style="height:50px;width:300px;" id="ptoppings">
-                    <option value="200">Pepporoni</option>
-                    <option value="220">Mushroom</option>
-                    <option value="100">Bacon</option>
-                    <option value="250">Mozzarella</option>
-                    <option value="100">Sausage</option>
-                    <option value="100">Onions</option>
-                    <option value="100">Tomatoes</option>
-                    <option value="100">Garlic</option>
-                    <option value="210">Crushed red pepper</option>
-                    <option value="240">Basil</option>
+                    <option value="pepperoni">Pepporoni</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="mozzarella">Mozzarella</option>
                 </select>
               <label>Number of pizzas required:</label>
                 <input type="number" max="100" min="1" style="height:50px;width:300px;" placeholder="Enter number here.." id="pnumber" >
@@ -88,8 +77,8 @@
           <div class="col-md-6">
             <form>
               <label>Pick you're preferred options:</label><br>
-                <input type="radio" name="status" id="delivered"> Delivered<br>
-                <input type="radio" name="status" id="notdelivered">Not delivered(picked up)
+                <input type="radio" name="status" id="delivered" value="300"> Delivered<br>
+                <input type="radio" name="status" id="notdelivered" value="0">Not delivered(picked up)
             </form>
           </div>  
           <div class="col-md-6" id="check">
