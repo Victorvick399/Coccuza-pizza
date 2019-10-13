@@ -103,7 +103,7 @@ $("#checkout").click(function (event) {
         var topping = $("#ptoppings option:selected").text();
         var number = parseInt($("input#pnumber").val());
         var text;
-        text = "You have ordered " + number + " pizza.<br>" + "Each of which is a " + number + " with a " + crust + "crust with " + topping + " toppings." + "Please appear at our nearest restaurant for your order which is Ksh " + multiply() +".";
+        text = "You have ordered " + number + " pizza.<br>" + "Each of which is " + size + " with a " + crust + "crust with " + topping + " toppings." + "Please appear at our nearest restaurant for your order which is Ksh " + multiply() +".";
         document.getElementById("results").innerHTML = text;
       }
     };
