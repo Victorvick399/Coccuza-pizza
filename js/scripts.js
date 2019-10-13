@@ -3,7 +3,6 @@ $("#checkout").click(function (event) {
     event.preventDefault();
     var onePizza = function add(pizzSize , pizzCrust , pizzTopp) {
       var pizzSize = $("#psize option:selected").val();
-    //   console.log(pizzSize);
       var pizzCrust = $("#pcrust option:selected").val();
       var pizzTopp =  $("#ptoppings option:selected").val();
       
@@ -14,7 +13,6 @@ $("#checkout").click(function (event) {
       switch (pizzSize) {
         case "small":
           pricesPizza = 500;
-        //   console.log(pricesPizza);
           break;
         case "medium":
           pricesPizza = 800;
@@ -44,7 +42,6 @@ $("#checkout").click(function (event) {
             break;
         case "mushroom":
             toppingPrice = 150;
-            // console.log(pricesPizza);
             break;
         case "bacon":
             toppingPrice = 50;
@@ -61,12 +58,50 @@ $("#checkout").click(function (event) {
 
     function multiply() {
       var pizzNumber = parseInt($("input#pnumber").val());
-    //   console.log(pizzNumber);
       return onePizza() * parseInt(pizzNumber);
     }
     alert("Current price is " + multiply());
 
-    prompt("Ente")
+    function total(){
+      var pizzDeliv =  $("#pdelivery option:selected").val();
+      var pizzDeliv=0;
+      switch (pizzDeliv){
+        case "delivered":
+          pizzDeliv = 300;
+        break;
+        case "not delivered":
+          pizzDeliv = 0 ;
+        break;
+      }
+      return (multiply()+pizzDeliv)
+    }
+    
+    function delivery(){
+      var txt=0;
+      var text=0;
+      var name= 0;
+      var place= 0;
+
+      if ($('#delivered').is(':selected')){
+        var txt;
+        var name = prompt("Please enter your name:");
+        var place = prompt("Please enter your location:")
+        if (name == null || name == "" || place == null || place == "") {
+        txt = "You have cancelled you're delivery option.";
+        } else {
+        txt = "Thank you " + name + " for ordering.You're food will be delivered to " + place  + " and your price is " + total() + "." ;
+        }
+        document.getElementById("results").innerHTML = txt; 
+    }else{
+        var text;
+        text = "Please appear at our nearest restaurant for your order which is " + multiply() +".";
+        document.getElementById("results").innerHTML = text;
+      }
+    };
+
+      $("#Total").on('click' , function(){
+        return delivery();
+      });
+    
     });
-  });
-});
+    });
