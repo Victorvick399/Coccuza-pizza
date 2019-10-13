@@ -73,19 +73,19 @@
             <br>
           </div>
         </form>
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <label>Pick you're preferred options:</label><br>
-                <input type="radio" name="status" id="delivered" value="300"> Delivered<br>
-                <input type="radio" name="status" id="notdelivered" value="0">Not delivered(picked up)
-            </form>
-          </div>  
-          <div class="col-md-6" id="check">
-            <input type="button" value="Checkout prices" id="checkout">
-            <div id="results"></div>
-          </div>
-        </div>
+        <br>
+        <input type="button" value="Checkout prices" id="checkout">
+        <br><br>
+        <form>
+          <label>Pick you're choice:</label>
+          <select class="form-control" style="height:50px;width:300px;" id="pdelivery">
+            <option id="delivered" value="Delivered">Delivered</option>
+            <option id="notdelivered" value="Not Delivered">Not Delivered</option> 
+          </select>
+        </form>
+        <br>
+        <input type="button" value="Total" id="Total">
+        <div id="results"></div>
       </div>
     </div>
   </body>
