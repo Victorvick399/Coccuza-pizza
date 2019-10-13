@@ -83,18 +83,27 @@ $("#checkout").click(function (event) {
       var place= 0;
 
       if ($('#delivered').is(':selected')){
+        var size = $("#psize option:selected").text();
+        var crust= $("#pcrust option:selected").text();
+        var topping = $("#ptoppings option:selected").text();
+        var number = parseInt($("input#pnumber").val());
         var txt;
         var name = prompt("Please enter your name:");
         var place = prompt("Please enter your location:")
         if (name == null || name == "" || place == null || place == "") {
         txt = "You have cancelled you're delivery option.";
         } else {
-        txt = "Thank you " + name + " for ordering.You're food will be delivered to " + place  + " and your price is " + total() + "." ;
+        txt = "Thank you " + name + " for ordering." + "You have ordered "+ number + " pizza.<br>" +
+        "Each of which is a " + size + "pizza with a " + crust + "crust and with " + topping + " toppings." + "You're food will be delivered to " + place  + " and your price is Ksh " + total() + "." ;
         }
         document.getElementById("results").innerHTML = txt; 
-    }else{
+      }else{
+        var size = $("#psize option:selected").text();
+        var crust= $("#pcrust option:selected").text();
+        var topping = $("#ptoppings option:selected").text();
+        var number = parseInt($("input#pnumber").val());
         var text;
-        text = "Please appear at our nearest restaurant for your order which is " + multiply() +".";
+        text = "You have ordered " + number + " pizza.<br>" + "Each with a " + crust + "crust with " + topping + " toppings." + "Please appear at our nearest restaurant for your order which is Ksh " + multiply() +".";
         document.getElementById("results").innerHTML = text;
       }
     };
